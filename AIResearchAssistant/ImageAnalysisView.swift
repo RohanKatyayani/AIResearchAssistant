@@ -9,10 +9,25 @@ import SwiftUI
 
 struct ImageAnalysisView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                Text("Computer Vision")
+                    .font(.largeTitle)
+                    .padding()
+                
+                Text("Here you'll analyze images with AI")
+                    .foregroundColor(.gray)
+                
+                Spacer()
+            }
+            .navigationTitle("Vision")
+        }
     }
 }
 
-#Preview {
-    ImageAnalysisView()
+struct ImageAnalysisView_Previews: PreviewProvider {
+    static var previews: some View {
+        ImageAnalysisView()
+            .preferredColorScheme(.dark)
+    }
 }

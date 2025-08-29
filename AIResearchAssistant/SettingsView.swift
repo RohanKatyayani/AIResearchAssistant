@@ -9,10 +9,25 @@ import SwiftUI
 
 struct SettingsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                Text("App Settings")
+                    .font(.largeTitle)
+                    .padding()
+                
+                Text("Configure your AI assistant here")
+                    .foregroundColor(.gray)
+                
+                Spacer()
+            }
+            .navigationTitle("Settings")
+        }
     }
 }
 
-#Preview {
-    SettingsView()
+struct SettingsView_Previews: PreviewProvider {
+    static var previews: some View {
+        SettingsView()
+            .preferredColorScheme(.dark)
+    }
 }
