@@ -53,19 +53,6 @@ pip install flask torch transformers
 # Run the AI server
 python app.py
 
-🏗️ Project Structure
-
-AIResearchAssistant/
-├── AIResearchAssistant.xcodeproj
-├── Sources/
-│   ├── ContentView.swift          # Main tab view
-│   ├── ChatView.swift            # AI chat interface
-│   ├── DocumentsView.swift       # Document management
-│   ├── ImageAnalysisView.swift   # Computer vision
-│   └── SettingsView.swift        # App configuration
-├── Assets/                       # App icons, images
-└── README.md                     # This file
-
 🎯 Learning Objectives
 - This project demonstrates:
 - SwiftUI development and modern iOS architecture
